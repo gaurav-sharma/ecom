@@ -1,12 +1,22 @@
 <?php
+
+App::uses('AcmeAPI', 'Lib');
+
 class CellPhonesController extends AppController {
+	
+	var $acmeAPI;
+	
+	public function beforeFilter() {
+		$this->acmeAPI = new AcmeAPI();
+	}
 	
 	public function index() {
 	
 	}
 	
 	public function smartphones() {
-		$phoneList = json_decode(file_get_contents(Configure::read('api.phoneList')));
+		 
+		$phoneList = $this->acmeAPI->listSmartPhones();
 		
 		$this->set('phoneList', $phoneList);
 	}

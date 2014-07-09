@@ -1,0 +1,37 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	#cart-summary.affix {
+  		width: 100px;  
+	} 
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	#cart-summary.affix {
+  		width: 293px;  
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	#cart-summary.affix {
+  		width: 360px;  
+	}
+}
+
+#zipcode-switcher {
+	padding: 5px 10px 5px 50px;
+}
+
+#zipcode-switcher a {
+	color: #fff;
+}

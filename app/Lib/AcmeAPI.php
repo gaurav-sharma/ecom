@@ -8,7 +8,12 @@ class AcmeAPI {
 	);
 	
 	public function listSmartPhones() {
-		$phoneList = json_decode ( $this->loadURL ( self::$urlList ['phoneList'], true ) );
+		$phoneList = json_decode ( $this->loadURL ( self::$urlList ['phoneList'] ) );
+		return $phoneList;
+	}
+	
+	public function listPlans() {
+		$phoneList = json_decode ( $this->loadURL ( self::$urlList ['planList'] ) );
 		return $phoneList;
 	}
 	

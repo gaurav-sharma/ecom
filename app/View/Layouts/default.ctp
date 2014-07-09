@@ -31,8 +31,6 @@ $cakeVersion = __d ( 'cake_dev', 'CakePHP %s', Configure::version () )?>
 	echo $this->Html->css ( 'bootstrap.min' );
 	echo $this->Html->css ( 'style' );
 	
-	echo $this->fetch ( 'meta' );
-	echo $this->fetch ( 'css' );
 	?>
 </head>
 <body>
@@ -84,7 +82,6 @@ $cakeVersion = __d ( 'cake_dev', 'CakePHP %s', Configure::version () )?>
 		src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script
 		src="//cdnjs.cloudflare.com/ajax/libs/holder/2.3.1/holder.min.js"></script>
-    <?php echo $this->Html->script('bootstrap.min'); ?>
-    <?php echo $this->fetch('script'); ?>
+    <?php echo $this->Html->script('bootstrap.min'); ?>    
 </body>
 </html>
